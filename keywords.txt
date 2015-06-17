@@ -1,0 +1,35 @@
+#######################################
+# Syntax Coloring Map For Display
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+lcd                       	   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+initialize					   KEYWORD2
+sendCommand                    KEYWORD2
+sendData                       KEYWORD2
+printChar                      KEYWORD2
+printString                    KEYWORD2
+printNumber                    KEYWORD2
+drawBitmap                     KEYWORD2
+setCursor                      KEYWORD2
+clearDisplay                   KEYWORD2
+setBlackBackground             KEYWORD2
+setWhiteBackground             KEYWORD2
+setDisplayOff                  KEYWORD2
+setDisplayOn                   KEYWORD2
+setPageMode                    KEYWORD2
+setHorizontalMode              KEYWORD2
+setBrightness                  KEYWORD2
+rotateDisplay180               KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
