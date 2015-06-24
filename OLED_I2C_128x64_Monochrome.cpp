@@ -5,6 +5,8 @@
 #include "OLED_I2C_128x64_Monochrome_Font.h"
 #include <Wire.h>
 #include <avr/pgmspace.h>
+// DEFINE CODE
+#define USE_REGULATOR
 // REDEFINE NAME
 #define OLED_I2C_128x64_Monochrome Display
 // ####################################################################################################################
@@ -20,9 +22,12 @@ void Display::initialize()														//
 		byte twbrbackup = TWBR;													//
 		TWBR = 12; 																//
 	}																			//
+	#ifdef USE_REGULATOR														//
+	// CHARGE PUMP REGULATOR 													//
+    sendCommand(COMMAND_CHARGE_PUMP_SETTING);									//
+	sendCommand(COMMAND_CHARGE_PUMP_ENABLE);									//
+	#endif 																		//
     setDisplayOff(); 															// display off
-    sendCommand(0x8d);															//
-	sendCommand(0x14);															//
     setBlackBackground();  														// default Set Normal Display
 	setPageMode();																// default addressing mode
 	clearDisplay();																//

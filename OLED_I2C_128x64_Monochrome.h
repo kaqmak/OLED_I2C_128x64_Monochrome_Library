@@ -37,6 +37,9 @@
 #define COMMAND_MODE					0x80									//
 #define OLED_DATA_MODE					0x40									//
 // COMMANDS 																	//
+#define COMMAND_CHARGE_PUMP_SETTING		0x8d									//
+#define COMMAND_CHARGE_PUMP_ENABLE		0x14									//
+																				//
 #define COMMAND_DISPLAY_OFF				0xAE									//
 #define COMMAND_DISPLAY_ON				0xAF									//
 #define COMMAND_BLACK_BACKGROUND 		0xA6									//
