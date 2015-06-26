@@ -21,8 +21,8 @@ void setup()
 	lcd.initialize();
 	// Simply call the function to print the string
 	writeText(LCD_Hyphen, 0, 0);
-	writeText(LCD_Text,   3, 0);
-	writeText(LCD_Hyphen, 6, 0);
+	writeText(LCD_Text,   0, 3);
+	writeText(LCD_Hyphen, 0, 6);
 }
 // ####################################################################################################################
 // ##### LOOP #########################################################################################################
